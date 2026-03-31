@@ -1,0 +1,141 @@
+# OSS Insight Scanner — Python
+
+Open Source Software (OSS NGMC) | Capstone Project
+
+---
+
+## Student Details
+
+Student Name: Naveen Mewada 
+Registration Number: 24MIM1090
+Chosen Software: Open Source Dependencies Scanner
+License: MIT License
+Course: Open Source Software (OSS NGMC)
+
+---
+
+## About This Project
+
+This project is a Python-based tool developed to perform an audit of open-source software dependencies.
+
+The OSS Insight Scanner analyzes packages used in a project, identifies their licenses, detects known vulnerabilities, and generates a structured audit report.
+
+This project demonstrates key open-source concepts such as transparency, security, and compliance.
+
+---
+
+## Repository Structure
+
+oss-insight-scanner/
+
+├── main.py
+├── dependency_reader.py
+├── license_checker.py
+├── vulnerability_checker.py
+├── report_generator.py
+├── data/
+│   ├── requirements.txt
+│   ├── license_data.json
+│   └── vulnerability_data.json
+└── README.md
+
+---
+
+## Features
+
+* Reads project dependencies
+* Identifies open-source licenses
+* Detects known vulnerabilities
+* Generates audit reports
+* Provides summary analysis
+
+---
+
+## Module Description
+
+### Dependency Reader
+
+Reads dependency files (like requirements.txt) and extracts package details.
+
+### License Checker
+
+Matches packages with their respective open-source licenses.
+
+### Vulnerability Checker
+
+Checks for known security vulnerabilities in packages.
+
+### Report Generator
+
+Creates a structured report showing package name, version, license, and vulnerability status.
+
+### Summary Analyzer
+
+Displays total packages scanned, safe packages, and vulnerable packages.
+
+---
+
+## Requirements
+
+* Python 3.x
+* requests library
+
+Install dependency:
+pip install requests
+
+---
+
+## How to Run
+
+Step 1: Clone Repository
+git clone https://github.com/your-username/oss-insight-scanner.git
+cd oss-insight-scanner
+
+Step 2: Install Requirements
+pip install requests
+
+Step 3: Run the Project
+python main.py
+
+---
+
+## Sample Output
+
+===== OSS AUDIT REPORT =====
+
+Package: django
+Version: 3.2.0
+License: BSD-3-Clause
+Vulnerability: YES
+Severity: High
+
+---
+
+Package: flask
+Version: 2.0.1
+License: BSD-3-Clause
+Vulnerability: NO
+
+---
+
+## Platform Compatibility
+
+Windows - Supported
+Linux - Supported
+macOS - Supported
+
+---
+
+## Notes
+
+* Uses sample datasets for license and vulnerability checking
+* Can be extended using real APIs like OSV.dev
+* Input file can be modified (requirements.txt)
+
+---
+
+## Course Information
+
+Open Source Software (OSS NGMC)
+
+
